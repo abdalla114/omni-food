@@ -1,0 +1,301 @@
+ @font-face{
+    src: url(../fonts/Rubik/Rubik-VariableFont_wght.ttf);
+    font-family: rupik;
+ }
+ body{
+    font-family: rupik;
+ }
+ /* NavBar */
+ nav .logo{
+    width: 9rem;
+ }
+nav .trylink {
+    background-color: rgb(230,126,34);
+    width: 8rem;
+    position: relative;
+    cursor: pointer;
+}
+nav .trylink::after{
+    content: '';
+    background-color: rgba(0, 0, 0, 0.101); 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    opacity: 0;
+    border-radius: 10%;
+    transition: all .3s;
+} 
+nav .trylink:hover::after{
+    opacity: 1;
+}
+nav ul .nav-item a{
+    transition: all .3s;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+nav ul .nav-item a:hover{
+ color: rgb(230,126,34) !important;
+}
+ /* End_NavBAr */
+ /* home */
+ .buttonz .left-btn{
+    width: 15rem;
+    background-color: rgb(230,126,34);
+    font-size: 1.4rem;
+    cursor: pointer;
+    position: relative;
+ }
+ .buttonz .right-btn{
+    width: 15rem ;
+    height: 3.56rem;
+    background-color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all .2s;
+    outline: none;
+border-color: transparent;  
+}
+ .buttonz .right-btn:hover{
+   background-color: transparent;
+   border: 4px solid white;
+  }
+  .buttonz .left-btn::after{
+   content: '';
+   position: absolute;
+   background-color: rgba(0, 0, 0, 0.141);
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   top: 0;
+   border-radius:1rem;
+   opacity: 0;
+   transition: all .2s;
+  }
+  .buttonz .left-btn:hover::after{
+   opacity: 1;
+  }
+ .foto {
+    width: 40px;
+    border-radius: 100%;
+    border: 
+    3px solid white;
+  }
+ .multi-foto img{
+   width: 2.375rem;
+   margin-inline-end: -10px;
+   border: 2.5px solid white;
+  }
+  .text-home{
+transform: translateY(35%);  }
+  .text-home span{
+   color: rgb(213,116,32);
+  }
+  .home{
+   background-color: rgb(253,242,233);
+  }
+  .home .title{
+   font-size: 3.5rem ;
+  }
+  .home .frst-p{
+   font-size: 1.4rem;
+  }
+  /* end_home */
+  /* companies */
+  .companies img{
+   filter: brightness(0);
+   opacity: 50%;
+   width: 100%;
+  }
+  .companies .foto-sec{
+   width: 13%;
+  }
+  /* end_companies */
+  /* hit */
+  .hit .title h6{
+   color: rgb(207,113,31);
+   font-weight: 600;
+  }
+  .hit .content h1{
+   filter: brightness(0);
+   opacity: 25%;
+   font-size: 5rem;
+  }
+  .hit .content p{
+   font-size: 1.3rem;
+  }
+  .hit .content-foto{
+   width: 30%;
+  }
+  .hit .content-foto::before{
+   content: '';
+   position: absolute;
+   background-color: rgb(250,229,211);
+   width: 140%;
+   left: 50%;
+   top: 50%;
+   padding-bottom: 140%;
+   transform: translate(-50%,-50%);
+   border-radius: 50%; 
+   z-index: -1;
+  }
+  .hit .content-foto::after{
+   content: '';
+   position: absolute;
+   background-color: rgb(253,242,233);
+   width: 185%;
+   left: 50%;
+   top: 50%;
+   padding-bottom: 185%;
+   transform: translate(-50%,-50%);
+   border-radius: 50%; 
+   z-index: -2;
+
+  }
+ 
+  /* end_hit */
+
+  /* meals */
+  .meals h6{
+   color: rgb(207,113,31);
+  }
+  .meals .veg1{
+   width: 5.7rem;
+   background-color: rgb(81,207,102);
+   border-radius: 100vh 100vh 100vh 100vh;
+   font-size: .8rem;
+  }
+  .meals .veg{
+   width: 4rem;
+   background-color: rgb(81,207,102);
+   border-radius: 100vh 100vh 100vh 100vh;
+   font-size: .8rem;
+  }
+  .meals .veg1 p , .meals .veg p{
+   transform: translateY(50%);
+  }
+  .meals ul li i{
+   color: rgb(207,113,31) ;
+  }
+  .meals .cord-foto{
+   border-radius: .375rem .375rem 0   0;
+  }
+  .meals .cord-foto img{
+   border-radius:.375rem .375rem 0  0;
+  }
+  .box{
+   transition: all .4s;
+  }
+  .box:hover{
+   transform: translateY(-5%);
+  }
+  .meal-foot a{
+   color: rgb(230,126,34);
+   cursor: pointer;
+  }
+  .meal-foot a:hover::after{
+   opacity: 0;
+  }
+  .meal-foot a::after{
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 2px;
+   bottom: -3px;
+   background-color: rgb(230,126,34);
+   left: 0;
+   transition: all .2s;
+  }
+
+  /* end_meals */
+
+  /* testimonials */
+.testmonials{
+   background-color: rgb(253,242,233);
+}
+.testmonials .title p{
+   color: rgb(219,137,50);
+}
+.testmonials .card-foto{
+   width: 3.8rem;
+}
+.testmonials .card{
+   border-style: none;
+}
+.testmonials .scale-foto img{
+   transition: all .4s;
+}
+.testmonials .scale-foto:hover img{
+   transform: scale(1.1);
+}
+
+  /* end_testmonials */
+
+/* pricing */
+  .pricing .title h6{
+   color:rgb(219,137,50) ;
+  }
+  .pricing .elmohem{
+   font-size: 4rem;
+  }
+  .pricing .card1 h5{
+   color:rgb(207,113,31) ;
+  }
+  .pricing .card i{
+   color: rgb(230,126,34);
+  }
+  .card-btn{
+   background-color: rgb(230,126,34);
+   cursor: pointer;
+   position: relative;
+  }
+  .card-btn::after{
+   content: '';
+   position: absolute;
+   top: 0;
+   width: 100%;
+   left: 0;
+   bottom: 0;
+   background-color: rgba(0, 0, 0, 0.067);
+   border-radius: .5rem;
+   opacity: 0;
+   transition: all .4s;
+  }
+  .card-btn:hover::after{
+   opacity: 1;
+  }
+  .pricing .card2{
+   background-color: rgb(253,242,233);
+   position: relative;
+  }
+  .pricing .card2::after{
+   content: "Best value";
+   position: absolute;
+   top: 9%;
+   right: -18%;
+   text-transform: uppercase;
+   font-size: 1.2rem;
+   font-weight: 700;
+   color: #333;
+   background-color: #ffd43b;
+   padding: 0.8rem 8rem;
+   transform: rotate(45deg);
+  }
+  /* end_pricing */
+
+  /* instructions */
+  .inst-icon{
+   width: 3.5rem;
+   height: 3.5rem;
+   background-color: rgb(253,242,233);
+   border-radius: 100vh;
+  }
+  .inst-icon i{
+   color: rgb(230,126,34);
+   font-size: 1.5rem;
+  }
+  .instructions .card{
+   border-style: none;
+  }
+  /* end_instructions */
